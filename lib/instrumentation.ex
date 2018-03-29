@@ -89,7 +89,6 @@ defmodule Instrumentation do
   value = time "memcache", "get", fn ->
     Memcache.get(key)
   end
-  ""
   ```
   """
   @spec time(namespace, tag, (() -> term)) :: term
